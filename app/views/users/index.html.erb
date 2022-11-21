@@ -1,0 +1,26 @@
+<!--
+<p style="color: green"><%= notice %></p>
+
+<h1>Users</h1>
+
+<div id="users">
+  <% @users.each do |user| %>
+    <%= render user %>
+    <p>
+      <%= link_to "Show this user", user %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New user", new_user_path %>
+-->
+<div class="d-flex flex-column justify-content-center min-vh-100 border align-items-center">
+  <h1 class="user-head">BUDGETARY APP</h1>
+
+  <div class="text-center border-secondary">
+    <%= link_to "Log in", new_user_session_path, class: "btn btn-success w-100 fs-5 log-btn" %>
+    <p class="para">Are you a new user? 
+    <%= link_to "Sign up", new_user_registration_path %>
+    </p>    
+  </div>
+</div>
