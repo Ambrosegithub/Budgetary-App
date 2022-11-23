@@ -3,13 +3,13 @@ Rails.application.routes.draw do
   devise_scope :user do
     get '/users/sign_out' => 'devise/sessions#destroy'
   end
-  authenticated :user do
-    root 'groups#index', as: :authenticated_root
-  end
+ # authenticated :user do
+    #root 'splash#index', as: :authenticated_root
+ # end
 
-  unauthenticated do
-    root to: 'splash#index', as: :unauthenticated_root
-  end
+  #unauthenticated do
+    root 'splash#index'
+ # end
   resources :expenses
   resources :groups
   resources :users

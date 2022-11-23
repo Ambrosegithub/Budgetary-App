@@ -1,9 +1,11 @@
 class GroupsController < ApplicationController
+  before_action :authenticate_user!
   before_action :set_group, only: %i[ show edit update destroy ]
 
   # GET /groups or /groups.json
   def index
-    @groups = Group.all
+    @groups = current_user.groups.order(:id)
+    #@groups = Group.all
     @expenses = Expense.all
     @users = current_user
   end
@@ -21,19 +23,14 @@ class GroupsController < ApplicationController
   # GET /groups/1/edit
   def edit
   end
- def cumulative_expenses
-    @expenses = Expense.all
-    @groups = Group.all
-    @users = current_user
-    @cumulative_expenses = @expenses.sum(:amount)
- end
+ 
   # POST /groups or /groups.json
   def create
     @group = current_user.groups.new(group_params)
 
     respond_to do |format|
       if @group.save
-        format.html { redirect_to group_url(@group), notice: "Group was successfully created." }
+        format.html { redirect_to groups_path, notice: "Group was successfully created." }
         format.json { render :show, status: :created, location: @group }
       else
         format.html { render :new, status: :unprocessable_entity }

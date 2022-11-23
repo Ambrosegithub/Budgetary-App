@@ -5,5 +5,14 @@
 #
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
+# create users 
+User.create(name: "John Doe", email: "Hatim@gmail.com", password: "password", password_confirmation: "password" )
+# create groups
+#group1 = Group.create(name: "Family", icon: "https://www.flaticon.com/svg/static/icons/svg/3135/3135715.svg", user_id: 1)
+#group2 = Group.create(name: "Friends", icon: "https://www.flaticon.com/svg/static/icons/svg/3135/3135715.svg", user_id: 1)
+group3 = Group.create(name: "Work", icon: "https://www.flaticon.com/svg/static/icons/svg/3135/3135715.svg", user_id: 1)
 
-rails g model expenses_groups group:references expense:references
+#10.times do |i|
+  #group1.expenses.create(name: "Expense #{i}", amount: rand(1..100))
+ # group2.expenses.create(name: "Expense #{i}", amount: rand(1..100))
+#end

@@ -1,10 +1,11 @@
 class ExpensesController < ApplicationController
+  before_action :authenticate_user!
   before_action :set_expense, only: %i[ show edit update destroy ]
 
   # GET /expenses or /expenses.json
   def index
-    @expenses = Expense.all
-    
+    @group = Group.find_by(id: params[:group_id])
+    @expenses = current_user.expenses.all
   end
 
   # GET /expenses/1 or /expenses/1.json
@@ -13,22 +14,24 @@ class ExpensesController < ApplicationController
 
   # GET /expenses/new
   def new
-    @expense = Expense.new
+    @group = Group.find_by(id: params[:group_id])
+    @expense = current_user.expenses.new
   end
 
   # GET /expenses/1/edit
   def edit
+    @group = Group.find_by(id: params[:group_id])
+    
   end
 
   # POST /expenses or /expenses.json
   def create
-    @group = Group.find(params[:group_id])
-    @expense = @group.expenses.join(name: expense_params[:name], amount: expense_params[:amount],
-                                      user_id: current_user.id, group_id: @group.id)
-    #@expense = current_user.expenses.new(expense_params.merge(group_ids: @group.id))
+
+    @group = current_user.groups.find_by(id: params[:group_id])
+    @expense = current_user.expenses.build(expense_params)
     respond_to do |format|
       if @expense.save
-        format.html { redirect_to expense_url(@expense), notice: "Expense was successfully created." }
+        format.html { redirect_to group_path(@expense.group_id), notice: "Expense was successfully created." }
         format.json { render :show, status: :created, location: @expense }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -68,6 +71,6 @@ class ExpensesController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def expense_params
-      params.require(:expense).permit(:name, :amount)
+      params.require(:expense).permit(:name, :amount, :group_id)
     end
 end

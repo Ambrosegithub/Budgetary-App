@@ -13,3 +13,33 @@
  *= require_tree .
  *= require_self
  */
+
+
+.group-cont {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+   
+}
+
+.group-cont-show {
+    background-color: coral;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+.grp-show-link {
+   display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+.new-grp {
+
+}
+
+.new-link-back {
+    display: flex;
+    justify-content: center;
+
+}

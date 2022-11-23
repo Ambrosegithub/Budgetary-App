@@ -1,10 +1,27 @@
 <p style="color: green"><%= notice %></p>
 
-<%= render @group %>
 
-<div>
+<%= render @group %>
+<!-- sum amount-->
+<strong>Expenses:</strong>
+   <h1> $<%= @group.total_expenses %></h1>
+
+  <div class="group-cont-show">
+    
+    <% @group.expenses.each do |expense| %>
+ <h1> <%= expense.name %></h1>
+  <h3><%= expense.amount %>
+    <% end %>
+ </div>
+
+ <div class="grp-show-link">
+
   <%= link_to "Edit this group", edit_group_path(@group) %> |
+
+   <%= link_to "Add New Transaction", new_expense_path %>
+
   <%= link_to "Back to groups", groups_path %>
 
   <%= button_to "Destroy this group", @group, method: :delete %>
+
 </div>

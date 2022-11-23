@@ -1,9 +1,25 @@
-<h1>TRANSACTIONS</h1>
+<div class="container d-grid grid-template-column-1fr-1fr bg-red">
+<h1 class="card align-items-center">BUDGETARY APP TRANSACTIONS</h1>
 <div>
-<h1>BUDGETARY APP</h1>
+<% if user_signed_in?%>
+<!--accessing the name the current user-->
 
+<%= image_tag('kind.png', class: 'splash-logo') %>
+
+<h2><%= current_user.name %></h2>
+<div class="cards w-100%"><%= link_to 'view groups',  groups_path %></div>
+<div><%= link_to "Sign out", destroy_user_session_path, method: :delete %></div>
+
+<% else %>
+<select>
+<option>
+<%= link_to "Sign in", new_user_session_path, method: :delete, class:"nav-link" %>
+</option>
+<option>
+<%= link_to "Sign up", new_user_registration_path, method: :delete, class:"nav-link" %>
+</option>
+</select>
+<% end %>
+</div>
 <div>
 
-<p>Accountability is our priority</p>
-
-<%= link_to "Groups", groups_path, class:"nav-link active"%>
