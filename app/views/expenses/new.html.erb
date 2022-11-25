@@ -1,8 +1,9 @@
+<div id ="group-show-title">
+   <h1 cla="new-expense-title"> ADD YOUR NEW TRANSACTION</h1>
+</div>
 <div class="new-expense">
-<h1>NEW TRANSACTIONS</h1>
 <%= render "form", expense: @expense %>
-<br>
 <div>
-<%= link_to 'back', :back %>
+<%= link_to 'back', :back, class: "back-btn"%>
 </div>
 </div>

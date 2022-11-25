@@ -72,8 +72,7 @@ margin-left: 2em;
 .new-expense {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    margin-top: -80px;
+    width: 60em;
 }
 
 .new-expense h1 {
@@ -178,6 +177,7 @@ margin-top: 9.2em;
     border: 1px solid #6c566c;
     background-color: #a2a267;
     margin-bottom: 1.4em;
+    width: 100%;
     
 }
 
@@ -198,6 +198,7 @@ margin-top: 9.2em;
     margin: 0;
     padding: 0.em 0;
     margin-bottom: 3em;
+    font-family: monospace, sans-serif;
 }
 
 .show-links {
@@ -315,3 +316,265 @@ flex-direction: column;
     text-align: center;
     margin-left: 25em;
  }
+
+ /*-------------- Expense new  -------------*/
+
+ .form-collection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    margin-top: 4em;
+    width: 100%;
+    height: 10%;
+    background-color: #a2a267;
+    padding: 2em;
+}
+
+.form-btn {
+    border: 1px solid #6c566c;
+    background-color: #a2a267;
+    width: 20%;
+    padding: 10px;
+    margin: 3em 1em;
+    align-self: center;
+    text-align: center;
+}
+
+.back-btn {
+    border: 1px solid #6c566c;
+    background-color: #a2a267;
+    width: 10%;
+    padding: 10px;
+    margin: 3em 1em;
+    align-self: center;
+    text-align: center;
+    text-decoration: none;
+}
+
+
+/*-------------- mobile version  -------------*/
+
+@media only screen and (max-width: 678px) {
+
+    *, *::before, *::after {
+        box-sizing: inherit;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+    body {
+        background-color: orange;
+    }
+
+    #group-index-title {
+        width: 100%;
+        font-size: 1.4em;
+    }
+
+    #group-index-title h1 {
+        padding: 0.2em;
+        font-size: 1.4em;
+       text-align: center;
+    }
+
+    .group-info {
+        font-size: 1em;
+        gap: 2em;
+    }
+    .group-info a {
+        font-size: 1em;
+        text-decoration: none;
+    }
+
+    img{
+        width: 5em;
+        height: 5em;
+    }
+
+    .new-grp-link {
+        border: 1px solid #6c566c;
+        background-color: #a2a267;
+        width: 20%;
+        padding: 10px;
+        margin: 3em 1em;
+        align-self: center;
+        text-align: center;
+        text-decoration: none;
+    }
+
+    .new-grp-link a {
+        text-decoration: none;
+        width: 100%;
+    }
+
+    /*-------------- New Group  -------------*/
+
+    .new-grp {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        }
+        
+        .new-grp-heading {
+            font-size: 2em;
+            align-self: center;
+            background-color: #330033;
+            width: 100%;
+        }
+        
+        .new-grp-heading h1 {
+            color : gold;
+            align-self: center;
+            text-align: center;
+            padding: 0.2em;
+            width: 100%;
+        }
+        .new-link-back {
+            display: flex;
+            justify-content: center;
+        
+        }
+        
+        .new-grp-form {
+            width: 96%;
+            margin-left: -1.2em;
+        }
+
+        .form-control {
+            padding: 1em;
+            border: 1px solid #6c566c;
+            background-color: #a2a267;
+            margin-bottom: 1em;
+            width: 100%;
+        }
+
+        /*-------------- Group show  -------------*/
+
+        #group-show-title {
+            text-align: center;
+             font-size: 1.28em;
+            background-color: #330033;
+            color: gold;
+            margin: 0;
+            padding: 0.em 0;
+            margin-bottom: 3em;
+            font-family: monospace, sans-serif;
+        } 
+
+        .total-expense {
+            display: flex;
+            justify-content: space-between;
+            gap: 3.2em; 
+            font-size: 1em;
+            align-items: center; 
+            background-color: #6c566c;
+            margin: 0 1em;
+           padding: 0.2em 0.4em; 
+
+        }
+        
+        .group-info-show{
+            display: flex;
+            width: 100%;
+            color: purple;
+            gap: 1em;
+            font-size: 1em;
+            align-items: center;
+            background-color: #6c566c;
+        }
+        
+        .group-info-show img {
+            width: 2.1em;
+            height: 2.1em;
+        }
+
+        .group-info-show p {
+            font-size: 0.8em;
+        }
+        .grp-expenses {
+            display: flex;
+            flex-direction: row;
+            margin-top: 2em;
+            align-items: center;
+            gap: 11em;
+            width: 70%;
+        }
+        
+        .grp-expenses h1 {
+          width: 60%;
+        }
+        
+        .group-cont-show {
+            display: grid;
+            gap : 5.4em;
+            grid-template-columns: 1fr;
+            justify-items: center;
+            position: relative;
+            left: 0;
+            background-color: lightcoral;
+        }
+        
+        .grp-show-link {
+           display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+        
+        .show-amount {
+            text-align: end;
+        }
+        
+        .show-name {
+            text-align: start;
+            font-size: 0.8em;
+            position: absolute;
+            left: 0;
+            margin-right: 1em;
+            margin-left: 0.5em;
+        }
+        .show-links {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            gap: 1em;
+            width: 100%;
+            margin-top: 4em;
+        }
+        .show-link-edit {
+        display: flex;
+        flex-direction: column;
+        }
+        
+        .delete-show {
+            border: 1px solid #6c566c;
+            background-color: #a2a267;
+            padding: 10px;
+            text-align: center;
+            margin: 2em 0;
+            width: 100%;
+        } 
+        
+        .show-link-back {
+            display: flex;
+            flex-direction: column;
+            }         
+            .show-links a {
+                text-decoration: none;
+                border: 1px solid #6c566c;
+                background-color: #a2a267;
+                width: 25%;
+                padding: 6px;
+                align-self: center;
+                text-align: center;
+            }
+
+            .new-expense-title {
+                font-size: 1em;
+                width: 100%;
+            }
+
+            .new-expense{
+                width: 100%;
+            }
+}

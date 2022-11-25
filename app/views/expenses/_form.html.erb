@@ -23,12 +23,12 @@
   
 <div class="my-5">
     <%= form.label :group_id %>
-    <div class="mt-1 rounded-md shadow-sm">
+    <div class="form-collection">
       <%=form.collection_select :group_id, Group.order(:name), :id, :name  %>
     </div>
   </div>
 
   <div>
-    <%= form.submit 'Save your Transattions' %>
+    <%= form.submit 'Save your Transattions', class: "form-btn" %>
   </div>
 <% end %>

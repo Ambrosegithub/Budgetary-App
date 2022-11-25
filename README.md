@@ -1,24 +1,65 @@
-# README
+The BUDGETARY APP is a web application, where we manage our expenses.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Video Presentation link
+Video Link
 
-Things you may want to cover:
+Live Link
+Live Link
 
-* Ruby version
+Built With
+Ruby
+Ruby on Rails
+Getting Started
+To get a local copy up and running follow these simple example steps.
 
-* System dependencies
+git clone git@github.com:Ambrosegithub/Budgetary-App.git
 
-* Configuration
+cd budget-app
 
-* Database creation
+Prerequisites
+Ruby Rails PostgresSQL
 
-* Database initialization
+Setup
+Install gems with:
 
-* How to run the test suite
+bundle install
+Setup database with:
 
-* Services (job queues, cache servers, search engines, etc.)
+rails db:create
+rails db:migrate
+Start server with:
 
-* Deployment instructions
+rails server
+Open http://localhost:3000/ in your browser.
 
-* ...
+Run tests
+Install npm with:
+
+npm i
+Install rspec with:
+
+bundle install
+and
+
+rails generate rspec:install
+run the test with:
+
+rspec spec
+Author
+👤 Isigba Ambrose
+
+GitHub: @Ambrosegithub
+Twitter: @Glorious12
+🤝 Contributing
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the issues page.
+
+Show your support
+Give a ⭐️ if you like this project!
+
+Acknowledgments
+Credits go to Gregoire at Behance
+📝 License
+This project is MIT licensed.
+
