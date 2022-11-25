@@ -1,0 +1,13 @@
+<div id ="group-index-title">
+      <h1>Your Catergories</h1>
+   </div>
+<div id="groups">
+  <% @groups.each do |group| %>
+    <%= render group %>    
+  <% end %>
+</div>
+
+<div class="new-grp-link">
+  <%= link_to "New group", new_group_path %>
+</div>
+<p style="color: green"><%= notice %></p>

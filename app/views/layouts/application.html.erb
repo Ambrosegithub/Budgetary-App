@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+
+    <%= javascript_importmap_tags %>
+  </head>
+
+ <body>
+
+    <%= yield %>
+     <% if notice %>
+       <p class="notice alert alert-success"><%=notice%></p>
+    <% else %>
+       <p class="alert "><%=alert%></p>
+    <% end %>
+
+
+   
+  </body>
+</html>
