@@ -17,6 +17,7 @@
 /tmp/pids/*
 !/tmp/pids/
 !/tmp/pids/.keep
+/node_modules/
 
 # Ignore uploaded files in development.
 /storage/*

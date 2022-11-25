@@ -9,9 +9,9 @@ RSpec.describe Group, type: :model do
     ),
             @group = Group.create(
               user_id: 1,
-                name: 'Family',
-                icon: 'https://www.flaticon.com/svg/static/icons/svg/3135/3135715.png'
-            )  
+              name: 'Family',
+              icon: 'https://www.flaticon.com/svg/static/icons/svg/3135/3135715.png'
+            )
   end
 
   it '@group created should be valid' do
@@ -29,5 +29,4 @@ RSpec.describe Group, type: :model do
   it '@icon created should not  be valid' do
     expect(@group.icon).not_to eq(100)
   end
-
 end

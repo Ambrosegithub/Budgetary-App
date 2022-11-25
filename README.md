@@ -1,10 +1,10 @@
 The BUDGETARY APP is a web application, where we manage our expenses.
 
 Video Presentation link
-Video Link
+[Video Link](https://www.loom.com/share/713ff3bc31f4405ab59df336b9e75c7c)
 
-Live Link
-Live Link
+Live Presentation link
+[Live Link](https://gentle-spire-11113.herokuapp.com/)
 
 Built With
 Ruby
