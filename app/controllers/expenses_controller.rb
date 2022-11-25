@@ -14,8 +14,8 @@ class ExpensesController < ApplicationController
 
   # GET /expenses/new
   def new
-    @group = Group.find_by(id: params[:group_id])
-    @expense = current_user.expenses.new
+    @group = current_user.groups.find_by(id: params[:group_id])
+    @expense = current_user.expenses.build
   end
 
   # GET /expenses/1/edit

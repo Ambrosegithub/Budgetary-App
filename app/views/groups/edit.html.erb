@@ -1,10 +1,11 @@
-<h1>Editing group</h1>
+<div id ="group-show-title">
+      <h1>UPDATE YOUR GROUP</h1>
+   </div>
 
 <%= render "form", group: @group %>
 
 <br>
 
-<div>
-  <%= link_to "Show this group", @group %> |
+<div id="update-links">
   <%= link_to "Back to groups", groups_path %>
 </div>

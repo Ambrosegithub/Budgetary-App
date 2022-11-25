@@ -1,17 +1,13 @@
-<div id="<%= dom_id group %>">
-
-<div class ="group-cont">
-<div>
-  <p>
-    <strong>Name:</strong>
-    <%= group.name %>
-  </p>
-</div>
-<div>
-  <p>
-    <strong>Icon:</strong>
+<div class="group-info">
+   <p>
     <img src='<%= group.icon %>' alt='<%= group.icon %>' width='100px' />
   </p>
-  </div>
- </div>
+
+   <p class="group-names">
+    <%= group.name %>
+   </p>
+
+  
+      <%= link_to "Show this group", group %>
+  
 </div>

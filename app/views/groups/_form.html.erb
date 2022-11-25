@@ -11,17 +11,13 @@
     </div>
   <% end %>
 
-  <div>
+  <div class="container-grp-form">
     <%= form.label :name, style: "display: block" %>
     <%= form.text_field :name, class: 'form-control' %>
-  </div>
-
-  <div>
+ 
     <%= form.label :icon, style: "display: block" %>
-    <%= form.text_field :icon, class: 'form-control' %>
-  </div>
+    <%= form.text_field :icon, class: 'form-control' , placeholder:"Enter Your Icon Url" %>
 
-  <div>
     <%= form.submit %>
   </div>
 <% end %>

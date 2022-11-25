@@ -14,32 +14,304 @@
  *= require_self
  */
 
+ *,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
 
 .group-cont {
     display: grid;
     grid-template-columns: 1fr 1fr;
-   
-}
-
-.group-cont-show {
-    background-color: coral;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-
-}
-
-.grp-show-link {
-   display: grid;
-    grid-template-columns: 1fr 1fr;
-
+   margin-top: -60px;
 }
 
 .new-grp {
-
+display: flex;
+flex-direction: column;
+justify-content: center;
 }
 
+.new-grp-heading {
+    font-size: 2rem;
+    align-self: center;
+    background-color: #330033;
+    width: 100%;
+}
+
+.new-grp-heading h1 {
+    color : gold;
+    align-self: center;
+text-align: center;
+}
 .new-link-back {
     display: flex;
     justify-content: center;
 
 }
+
+.new-grp-form {
+    width: 100%;
+}
+
+.container-grp-form {
+width: 90%;
+display: flex;
+flex-direction: column;
+margin-left: 2em;
+
+}
+
+.splash-logo {
+    width: 30px;
+    height: 30px;
+}
+
+.new-expense {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: -80px;
+}
+
+.new-expense h1 {
+    font-size: 2rem;
+    text-align: center;
+}
+.group-index {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/*-------------- splash  -------------*/
+
+.splash-user {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.4em;
+    flex-direction: column;
+}
+
+
+.splash-title {
+    font-size: 2rem;
+    text-align: center;
+    font-size: 3.1em;
+    color: gold;
+    margin: 0;
+    padding: 0.8em 0;
+}
+.splash-link {
+    text-decoration: none;
+    width: 40%;
+    font-size: 1em;
+    padding: 10px;
+    border: 2px solid black;
+    text-align: center;
+    background-color: #a2a267;
+    margin-left: 30%;
+}
+
+.splash-container {
+    background-color: #330033;
+}
+
+.splash-btn {
+  display: flex;
+  flex-direction: column;
+  width: 100%;  
+}
+
+/*-------------- Group index  -------------*/
+
+#group-index-title {
+    text-align: center;
+    font-size: 2em;
+    background-color: #330033;
+    color: gold;
+    margin: 0;
+    padding: 0.em 0;
+}
+   
+#group-index-title h1{
+    padding: 0.3em;
+}
+
+#groups {
+display: flex;
+flex-direction: column;
+gap: 3em;
+margin-top: 9.2em;
+}
+
+.group-info {
+    display: flex;
+    width: 100%;
+    color: purple;
+    gap: 4em;
+    font-size: 1.5em;
+    padding: 0.5em;
+    align-items: center;
+    background-color: #6c566c;
+}
+
+.group-names {
+    width: 40%;
+}
+
+.new-grp-link {
+    border: 1px solid #6c566c;
+    background-color: #a2a267;
+    width: 20%;
+    padding: 10px;
+    margin: 3em 1em;
+    align-self: center;
+    text-align: center;
+}
+
+.form-control {
+    padding: 2em;
+    border: 1px solid #6c566c;
+    background-color: #a2a267;
+    margin-bottom: 1.4em;
+    
+}
+
+.backward {
+   border: #6c566c solid 2px;
+   padding: 10px;
+    background-color: #a2a267;
+    text-decoration: none;
+}
+
+
+/*-------------- Group show  -------------*/
+#group-show-title {
+    text-align: center;
+    font-size: 2em;
+    background-color: #330033;
+    color: gold;
+    margin: 0;
+    padding: 0.em 0;
+    margin-bottom: 3em;
+}
+
+.show-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1em;
+    width: 62%;
+    margin-top: 4em;
+}
+
+.show-links a {
+    text-decoration: none;
+    border: 1px solid #6c566c;
+    background-color: #a2a267;
+    width: 25%;
+    padding: 10px;
+    align-self: center;
+    text-align: center;
+}
+
+#add-show {
+width: 40%;
+}
+
+.total-expense {
+    display: flex;
+    gap: 4em;
+    font-size: 1.5em;
+    align-items: center;
+    background-color: #6c566c;
+    margin: 0 1.7em;
+    padding: 0.2em 0.7em;
+}
+
+.group-info-show{
+    display: flex;
+    width: 100%;
+    color: purple;
+    gap: 2em;
+    font-size: 1.5em;
+    align-items: center;
+    background-color: #6c566c;
+}
+
+.grp-expenses {
+    display: flex;
+    flex-direction: row;
+    margin-top: 2em;
+    align-items: center;
+    gap: 11em;
+    width: 70%;
+}
+
+.grp-expenses h1 {
+  width: 60%;
+}
+
+.group-cont-show {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+}
+
+.grp-show-link {
+   display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.show-amount {
+    text-align: center;
+}
+
+.show-name {
+    text-align: start;
+    font-size: 1em;
+}
+
+.show-link-edit {
+display: flex;
+flex-direction: column;
+}
+
+.delete-show {
+    border: 1px solid #6c566c;
+    background-color: #a2a267;
+    padding: 10px;
+    text-align: center;
+    margin: 2em 0;
+    width: 250px;
+} 
+
+.show-link-back {
+    display: flex;
+    flex-direction: column;
+    } 
+
+
+ /*-------------- Group edit  -------------*/
+
+ #update-links {
+   display: flex;    
+    width: 62%;
+    margin-top: 4em;
+    align-items: center;
+ }
+
+ #update-links a {
+    text-decoration: none;
+    border: 1px solid #6c566c;
+    background-color: #a2a267;
+    width: 25%;
+    padding: 10px;
+    align-self: center;
+    text-align: center;
+    margin-left: 25em;
+ }

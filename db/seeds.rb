@@ -16,3 +16,8 @@ group3 = Group.create(name: "Work", icon: "https://www.flaticon.com/svg/static/i
   #group1.expenses.create(name: "Expense #{i}", amount: rand(1..100))
  # group2.expenses.create(name: "Expense #{i}", amount: rand(1..100))
 #end
+
+# add group Ref to Expense
+
+rails g migration AddGroupRefToExpense expenses:references 
+AddExpenseRefToGroup groups:references
