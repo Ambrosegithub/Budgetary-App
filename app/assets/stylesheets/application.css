@@ -14,579 +14,575 @@
  *= require_self
  */
 
- *,
+*,
 *::before,
 *::after {
   box-sizing: inherit;
   margin: 0;
   padding: 0;
 }
-a{
-    text-decoration: none;
+
+a {
+  text-decoration: none;
 }
 
 :root {
-    --text: black;
-    --blue: #3778c2;
-    --green: #51b523;
-    --grey: grey;
-    --red: #f21905;
-    --white: aliceblue;
-  }
+  --text: black;
+  --blue: #3778c2;
+  --green: #51b523;
+  --grey: grey;
+  --red: #f21905;
+  --white: aliceblue;
+}
 
 .group-cont {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-   margin-top: -60px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: -60px;
 }
 
 .new-grp {
-display: flex;
-flex-direction: column;
-justify-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .new-grp-heading {
-    font-size: 2rem;
-    align-self: center;
-    background-color:var(--blue);
-    width: 100%;
+  font-size: 2rem;
+  align-self: center;
+  background-color: var(--blue);
+  width: 100%;
 }
 
-.new-grp-heading h1 {
-    color :var(--text);
-    align-self: center;
-text-align: center;
-}
 .new-link-back {
-    display: flex;
-    justify-content: center;
-
+  display: flex;
+  justify-content: center;
 }
 
 .new-grp-form {
-    width: 100%;
+  width: 100%;
 }
 
 .container-grp-form {
-width: 90%;
-display: flex;
-flex-direction: column;
-margin-left: 2em;
-
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  margin-left: 2em;
 }
 
 .splash-logo {
-    width: 30px;
-    height: 30px;
+  width: 30px;
+  height: 30px;
 }
 
 .new-expense {
-    display: flex;
-    flex-direction: column;
-    width: 60em;
+  display: flex;
+  flex-direction: column;
+  width: 60em;
 }
 
 .new-expense h1 {
-    font-size: 2rem;
-    text-align: center;
-}
-.group-index {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  font-size: 2rem;
+  text-align: center;
 }
 
-/*-------------- splash  -------------*/
+.group-index {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* -------------- splash  ------------- */
 
 .splash-user {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 2.4em;
-    flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.4em;
+  flex-direction: column;
 }
-
 
 .splash-title {
-    font-size: 2rem;
-    text-align: center;
-    font-size: 3.1em;
-    color:var(--text);
-    margin: 0;
-    padding: 0.8em 0;
+  text-align: center;
+  font-size: 3.1em;
+  color: var(--text);
+  margin: 0;
+  padding: 0.8em 0;
 }
+
 .splash-link {
-    text-decoration: none;
-    width: 40%;
-    font-size: 1em;
-    padding: 10px;
-    border: 2px solid black;
-    text-align: center;
-    background-color:var(--green);
-    margin-left: 30%;
+  text-decoration: none;
+  width: 40%;
+  font-size: 1em;
+  padding: 10px;
+  border: 2px solid black;
+  text-align: center;
+  background-color: var(--green);
+  margin-left: 30%;
 }
 
 .splash-container {
-    background-color: var(--blue);
+  background-color: var(--blue);
 }
 
 .splash-btn {
   display: flex;
   flex-direction: column;
-  width: 100%;  
+  width: 100%;
 }
 
-/*-------------- Group index  -------------*/
+/* -------------- Group index  ------------- */
 
 #group-index-title {
-    text-align: center;
-    font-size: 2em;
-    background-color: var(--blue);
-    color: var(--text);
-    margin: 0;
-    padding: 0 0;
-}
-   
-#group-index-title h1{
-    padding: 0.3em;
-}
-
-#groups {
-display: flex;
-flex-direction: column;
-gap: 3em;
-margin-top: 9.2em;
-}
-
-.group-info {
-    display: flex;
-    width: 100%;
-    color: var(--text);
-    gap: 4em;
-    font-size: 1.5em;
-    padding: 0.5em;
-    align-items: center;
-    background-color: #285b85;
-}
-
-.group-names {
-    width: 40%;
-}
-
-.new-grp-link {
-    border: 1px solid #285b85;
-    background-color: var(--green);
-    width: 20%;
-    padding: 10px;
-    margin: 3em 1em;
-    align-self: center;
-    text-align: center;
-}
-
-.form-control {
-    padding: 2em;
-    border: 1px solid #285b85;
-    background-color: var(--text);
-    margin-bottom: 1.4em;
-    width: 100%;
-    
-}
-
-.backward {
-   border: #285b85 solid 2px;
-   padding: 10px;
-    background-color: var(--text);
-    text-decoration: none;
-}
-
-
-/*-------------- Group show  -------------*/
-#group-show-title {
-    text-align: center;
-    font-size: 2em;
-    background-color: var(--blue);
-    color: var(--text);
-    margin: 0;
-    padding: 0.em 0;
-    margin-bottom: 3em;
-    font-family: monospace, sans-serif;
-}
-
-.show-links {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    gap: 1em;
-    width: 62%;
-    margin-top: 4em;
-}
-
-.show-links a {
-    text-decoration: none;
-    border: 1px solid #285b85;
-    background-color: var(--green);
-    width: 25%;
-    padding: 10px;
-    align-self: center;
-    text-align: center;
-}
-
-#add-show {
-width: 40%;
-}
-
-.total-expense {
-    display: flex;
-    gap: 4em;
-    font-size: 1.5em;
-    align-items: center;
-    background-color: var(--blue);
-    margin: 0 1.7em;
-    padding: 0.2em 0.7em;
-}
-
-.group-info-show{
-    display: flex;
-    width: 100%;
-    color: var(--text);
-    gap: 2em;
-    font-size: 1.5em;
-    align-items: center;
-    background-color: #266dab;
-}
-
-.grp-expenses {
-    display: flex;
-    flex-direction: row;
-    margin-top: 2em;
-    align-items: center;
-    gap: 11em;
-    width: 70%;
+  text-align: center;
+  font-size: 2em;
+  background-color: var(--blue);
+  color: var(--text);
+  margin: 0;
+  padding: 0 0;
 }
 
 .grp-expenses h1 {
   width: 60%;
 }
 
+.new-grp-heading h1 {
+  color: var(--text);
+  align-self: center;
+  text-align: center;
+  padding: 0.2em;
+  width: 100%;
+}
+
+#group-index-title h1 {
+  padding: 0.3em;
+}
+
+#groups {
+  display: flex;
+  flex-direction: column;
+  gap: 3em;
+  margin-top: 9.2em;
+}
+
+.group-info {
+  display: flex;
+  width: 100%;
+  color: var(--text);
+  gap: 4em;
+  font-size: 1.5em;
+  padding: 0.5em;
+  align-items: center;
+  background-color: #285b85;
+}
+
+.group-names {
+  width: 40%;
+}
+
+.new-grp-link {
+  border: 1px solid #285b85;
+  background-color: var(--green);
+  width: 20%;
+  padding: 10px;
+  margin: 3em 1em;
+  align-self: center;
+  text-align: center;
+}
+
+.form-control {
+  padding: 2em;
+  border: 1px solid #285b85;
+  background-color: var(--text);
+  margin-bottom: 1.4em;
+  width: 100%;
+}
+
+.backward {
+  border: #285b85 solid 2px;
+  padding: 10px;
+  background-color: var(--text);
+  text-decoration: none;
+}
+
+/* -------------- Group show  ------------- */
+#group-show-title {
+  text-align: center;
+  font-size: 2em;
+  background-color: var(--blue);
+  color: var(--text);
+  margin: 0;
+  padding: 0;
+  margin-bottom: 3em;
+  font-family: monospace, sans-serif;
+}
+
+.show-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 1em;
+  width: 62%;
+  margin-top: 4em;
+}
+
+.show-links a {
+  text-decoration: none;
+  border: 1px solid #285b85;
+  background-color: var(--green);
+  width: 25%;
+  padding: 10px;
+  align-self: center;
+  text-align: center;
+}
+
+#add-show {
+  width: 40%;
+}
+
+.total-expense {
+  display: flex;
+  gap: 4em;
+  font-size: 1.5em;
+  align-items: center;
+  background-color: var(--blue);
+  margin: 0 1.7em;
+  padding: 0.2em 0.7em;
+}
+
+.group-info-show {
+  display: flex;
+  width: 100%;
+  color: var(--text);
+  gap: 2em;
+  font-size: 1.5em;
+  align-items: center;
+  background-color: #266dab;
+}
+
+.grp-expenses {
+  display: flex;
+  flex-direction: row;
+  margin-top: 2em;
+  align-items: center;
+  gap: 11em;
+  width: 70%;
+}
+
 .group-cont-show {
-    display: grid;
-    grid-template-columns: 1fr;
-    justify-items: center;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
 }
 
 .grp-show-link {
-   display: grid;
-    grid-template-columns: 1fr 1fr;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 .show-amount {
-    text-align: center;
+  text-align: center;
 }
 
 .show-name {
-    text-align: start;
-    font-size: 1em;
+  text-align: start;
+  font-size: 1em;
 }
 
 .show-link-edit {
-display: flex;
-flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .delete-show {
-    border: 1px solid var(--green);
-    background-color: var(--green);
-    padding: 10px;
-    text-align: center;
-    margin: 2em 0;
-    width: 250px;
-} 
+  border: 1px solid var(--green);
+  background-color: var(--green);
+  padding: 10px;
+  text-align: center;
+  margin: 2em 0;
+  width: 250px;
+}
 
 .show-link-back {
-    display: flex;
-    flex-direction: column;
-    } 
+  display: flex;
+  flex-direction: column;
+}
 
+/* -------------- Group edit  ------------- */
 
- /*-------------- Group edit  -------------*/
+#update-links {
+  display: flex;
+  width: 62%;
+  margin-top: 4em;
+  align-items: center;
+}
 
- #update-links {
-   display: flex;    
-    width: 62%;
-    margin-top: 4em;
-    align-items: center;
- }
+#update-links a {
+  text-decoration: none;
+  border: 1px solid var(--green);
+  background-color: var(--green);
+  width: 25%;
+  padding: 10px;
+  align-self: center;
+  text-align: center;
+  margin-left: 25em;
+}
 
- #update-links a {
-    text-decoration: none;
-    border: 1px solid var(--green);
-    background-color:var(--green);
-    width: 25%;
-    padding: 10px;
-    align-self: center;
-    text-align: center;
-    margin-left: 25em;
- }
+/* -------------- Expense new  ------------- */
 
- /*-------------- Expense new  -------------*/
-
- .form-collection {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 1em;
-    margin-top: 4em;
-    width: 100%;
-    height: 10%;
-    background-color: var(--green);
-    padding: 2em;
+.form-collection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+  margin-top: 4em;
+  width: 100%;
+  height: 10%;
+  background-color: var(--green);
+  padding: 2em;
 }
 
 .form-btn {
-    border: 1px solid #285b85;
+  border: 1px solid #285b85;
+  background-color: var(--green);
+  width: 20%;
+  padding: 10px;
+  margin: 3em 1em;
+  align-self: center;
+  text-align: center;
+}
+
+.back-btn {
+  border: 1px solid #285b85;
+  background-color: green;
+  width: 10%;
+  padding: 10px;
+  margin: 3em 1em;
+  align-self: center;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* -------------- mobile version  ------------- */
+
+@media only screen and (max-width: 678px) {
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+
+  body {
+    background-color: rgb(237, 242, 245);
+  }
+
+  .grp-expenses h1 {
+    width: 60%;
+  }
+
+  #group-index-title {
+    width: 100%;
+    font-size: 1.4em;
+  }
+
+  #group-index-title h1 {
+    padding: 0.2em;
+    font-size: 1.4em;
+    text-align: center;
+  }
+
+  .group-info {
+    font-size: 1em;
+    gap: 2em;
+  }
+
+  .group-info a {
+    font-size: 1em;
+    text-decoration: none;
+  }
+
+  img {
+    width: 5em;
+    height: 5em;
+  }
+
+  .new-grp-link {
+    border: 1px solid var(--green);
     background-color: var(--green);
     width: 20%;
     padding: 10px;
     margin: 3em 1em;
     align-self: center;
     text-align: center;
-}
+    text-decoration: none;
+  }
 
-.back-btn {
+  .new-grp-link a {
+    text-decoration: none;
+    width: 100%;
+  }
+
+  /* -------------- New Group  ------------- */
+
+  .new-grp {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .new-grp-heading {
+    font-size: 2em;
+    align-self: center;
+    background-color: var(--blue);
+    width: 100%;
+  }
+
+  .new-link-back {
+    display: flex;
+    justify-content: center;
+  }
+
+  .new-grp-form {
+    width: 96%;
+    margin-left: -1.2em;
+  }
+
+  .form-control {
+    padding: 1em;
+    border: 1px solid var(--green);
+    background-color: var(--green);
+    margin-bottom: 1em;
+    width: 100%;
+  }
+
+  /* -------------- Group show  ------------- */
+
+  #group-show-title {
+    text-align: center;
+    font-size: 1.28em;
+    background-color: var(--blue);
+    color: var(--text);
+    margin: 0;
+    padding: 0;
+    margin-bottom: 3em;
+    font-family: monospace, sans-serif;
+  }
+
+  .total-expense {
+    display: flex;
+    justify-content: space-between;
+    gap: 3.2em;
+    font-size: 1em;
+    align-items: center;
+    background-color: var(--blue);
+    margin: 0 1em;
+    padding: 0.2em 0.4em;
+  }
+
+  .group-info-show {
+    display: flex;
+    width: 100%;
+    color: var(--text);
+    gap: 1em;
+    font-size: 1em;
+    align-items: center;
+    background-color: var(--blue);
+  }
+
+  .group-info-show img {
+    width: 2.1em;
+    height: 2.1em;
+  }
+
+  .group-info-show p {
+    font-size: 0.8em;
+  }
+
+  .grp-expenses {
+    display: flex;
+    flex-direction: row;
+    margin-top: 2em;
+    align-items: center;
+    gap: 11em;
+    width: 70%;
+  }
+
+  .group-cont-show {
+    display: grid;
+    gap: 5.4em;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    position: relative;
+    left: 0;
+    background-color: lightcoral;
+  }
+
+  .grp-show-link {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .show-amount {
+    text-align: end;
+  }
+
+  .show-name {
+    text-align: start;
+    font-size: 0.8em;
+    position: absolute;
+    left: 0;
+    margin-right: 1em;
+    margin-left: 0.5em;
+  }
+
+  .show-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1em;
+    width: 100%;
+    margin-top: 4em;
+  }
+
+  .show-link-edit {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .delete-show {
     border: 1px solid #285b85;
-    background-color: green;
-    width: 10%;
+    background-color: var(--text);
     padding: 10px;
-    margin: 3em 1em;
+    text-align: center;
+    margin: 2em 0;
+    width: 100%;
+  }
+
+  .show-link-back {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .show-links a {
+    text-decoration: none;
+    border: 1px solid #285b85;
+    background-color: var(--text);
+    width: 25%;
+    padding: 6px;
     align-self: center;
     text-align: center;
-    text-decoration: none;
-}
+  }
 
+  .new-expense-title {
+    font-size: 1em;
+    width: 100%;
+  }
 
-/*-------------- mobile version  -------------*/
-
-@media only screen and (max-width: 678px) {
-
-    *, *::before, *::after {
-        box-sizing: inherit;
-        margin: 0;
-        padding: 0;
-        width: 100%;
-    }
-    body {
-        background-color: rgb(237, 242, 245);
-    }
-
-    #group-index-title {
-        width: 100%;
-        font-size: 1.4em;
-    }
-
-    #group-index-title h1 {
-        padding: 0.2em;
-        font-size: 1.4em;
-       text-align: center;
-    }
-
-    .group-info {
-        font-size: 1em;
-        gap: 2em;
-    }
-    .group-info a {
-        font-size: 1em;
-        text-decoration: none;
-    }
-
-    img{
-        width: 5em;
-        height: 5em;
-    }
-
-    .new-grp-link {
-        border: 1px solid var(--green);
-        background-color: var(--green);
-        width: 20%;
-        padding: 10px;
-        margin: 3em 1em;
-        align-self: center;
-        text-align: center;
-        text-decoration: none;
-    }
-
-    .new-grp-link a {
-        text-decoration: none;
-        width: 100%;
-    }
-
-    /*-------------- New Group  -------------*/
-
-    .new-grp {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        }
-        
-        .new-grp-heading {
-            font-size: 2em;
-            align-self: center;
-            background-color: var(--blue);
-            width: 100%;
-        }
-        
-        .new-grp-heading h1 {
-            color : var(--text);
-            align-self: center;
-            text-align: center;
-            padding: 0.2em;
-            width: 100%;
-        }
-        .new-link-back {
-            display: flex;
-            justify-content: center;
-        
-        }
-        
-        .new-grp-form {
-            width: 96%;
-            margin-left: -1.2em;
-        }
-
-        .form-control {
-            padding: 1em;
-            border: 1px solid var(--green);
-            background-color: var(--green);
-            margin-bottom: 1em;
-            width: 100%;
-        }
-
-        /*-------------- Group show  -------------*/
-
-        #group-show-title {
-            text-align: center;
-             font-size: 1.28em;
-            background-color:var(--blue);
-            color: var(--text);
-            margin: 0;
-            padding: 0.em 0;
-            margin-bottom: 3em;
-            font-family: monospace, sans-serif;
-        } 
-
-        .total-expense {
-            display: flex;
-            justify-content: space-between;
-            gap: 3.2em; 
-            font-size: 1em;
-            align-items: center; 
-            background-color: var(--blue);
-            margin: 0 1em;
-           padding: 0.2em 0.4em; 
-
-        }
-        
-        .group-info-show{
-            display: flex;
-            width: 100%;
-            color: var(--text);
-            gap: 1em;
-            font-size: 1em;
-            align-items: center;
-            background-color: var(--blue);
-        }
-        
-        .group-info-show img {
-            width: 2.1em;
-            height: 2.1em;
-        }
-
-        .group-info-show p {
-            font-size: 0.8em;
-        }
-        .grp-expenses {
-            display: flex;
-            flex-direction: row;
-            margin-top: 2em;
-            align-items: center;
-            gap: 11em;
-            width: 70%;
-        }
-        
-        .grp-expenses h1 {
-          width: 60%;
-        }
-        
-        .group-cont-show {
-            display: grid;
-            gap : 5.4em;
-            grid-template-columns: 1fr;
-            justify-items: center;
-            position: relative;
-            left: 0;
-            background-color: lightcoral;
-        }
-        
-        .grp-show-link {
-           display: grid;
-            grid-template-columns: 1fr 1fr;
-        }
-        
-        .show-amount {
-            text-align: end;
-        }
-        
-        .show-name {
-            text-align: start;
-            font-size: 0.8em;
-            position: absolute;
-            left: 0;
-            margin-right: 1em;
-            margin-left: 0.5em;
-        }
-        .show-links {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            gap: 1em;
-            width: 100%;
-            margin-top: 4em;
-        }
-        .show-link-edit {
-        display: flex;
-        flex-direction: column;
-        }
-        
-        .delete-show {
-            border: 1px solid #285b85;
-            background-color: var(--text);
-            padding: 10px;
-            text-align: center;
-            margin: 2em 0;
-            width: 100%;
-        } 
-        
-        .show-link-back {
-            display: flex;
-            flex-direction: column;
-            }         
-            .show-links a {
-                text-decoration: none;
-                border: 1px solid #285b85;
-                background-color: var(--text);
-                width: 25%;
-                padding: 6px;
-                align-self: center;
-                text-align: center;
-            }
-
-            .new-expense-title {
-                font-size: 1em;
-                width: 100%;
-            }
-
-            .new-expense{
-                width: 100%;
-            }
+  .new-expense {
+    width: 100%;
+  }
 }
