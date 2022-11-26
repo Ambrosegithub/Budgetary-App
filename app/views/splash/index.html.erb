@@ -1,6 +1,12 @@
 <div class="splash-container">
    <h1 class="splash-title">BUDGETARY APP TRANSACTIONS</h1>
+   <div class ="sign-in">
+  <%= link_to "Sign in", new_user_session_path, method: :delete, class:"nav-link1" %>
+
+  <%= link_to "Sign up", new_user_registration_path, method: :delete, class:"nav-link2" %>
 </div>
+</div>
+<p class="splash-para">Welcome To Your Enviable Budget App</p>
 <div>
    <% if user_signed_in?%>
 <!--accessing the name the current user-->
@@ -19,10 +25,11 @@
 </div>
 
   <% else %>
-  <%= link_to "Sign in", new_user_session_path, method: :delete, class:"nav-link" %>
+  <div class ="sign-in">
+  <%= link_to "Sign in", new_user_session_path, method: :delete, class:"nav-link1a" %>
 
-  <%= link_to "Sign up", new_user_registration_path, method: :delete, class:"nav-link" %>
-
+  <%= link_to "Sign up", new_user_registration_path, method: :delete, class:"nav-link2b" %>
+</div>
   <% end %>
 </div>
 

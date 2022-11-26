@@ -95,14 +95,6 @@
   flex-direction: column;
 }
 
-.splash-title {
-  text-align: center;
-  font-size: 3.1em;
-  color: gold;
-  margin: 0;
-  padding: 0.8em 0;
-}
-
 .splash-link {
   text-decoration: none;
   width: 40%;
@@ -110,12 +102,17 @@
   padding: 10px;
   border: 2px solid black;
   text-align: center;
-  background-color: #a2a267;
+  background-color: #51b523;
   margin-left: 30%;
 }
 
 .splash-container {
-  background-color: #303;
+  background-color: #3778c2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 4em;
+  width: 100%;
 }
 
 .splash-btn {
@@ -124,13 +121,77 @@
   width: 100%;
 }
 
+.splash-title {
+  text-align: center;
+  font-size: 3.4em;
+  color: #fff;
+  margin-left: 0;
+  padding: 0.8em 0;
+  width: 86%;
+  position: relative;
+  left: 0;
+}
+
+.sign-in {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 20%;
+  padding: 0.2em;
+  gap: 0.1em;
+}
+
+.splash-para {
+  font-size: 2.2em;
+  color: #000;
+  text-align: center;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-link1 {
+  margin-top: 1em;
+  text-decoration: none;
+  font-size: 2em;
+  padding: 0.1em;
+  font-weight: bold;
+  border: 1px solid #000;
+}
+
+.nav-link2 {
+  margin-top: 1em;
+  text-decoration: none;
+  padding: 0.1em;
+  font-size: 2em;
+  font-weight: bold;
+  border: 1px solid #000;
+}
+
+.nav-link1a {
+  text-decoration: none;
+  border: 1px solid #000;
+  padding: 0.1em;
+  width: 50px;
+  text-align: center;
+}
+
+.nav-link2b {
+  text-decoration: none;
+  border: 1px solid #000;
+  padding: 0.1em;
+  width: 50px;
+  text-align: center;
+}
+
 /* -------------- Group index  ------------- */
 
 #group-index-title {
   text-align: center;
   font-size: 2em;
-  background-color: #303;
-  color: gold;
+  background-color: #3778c2;
+  color: #fff;
   margin: 0;
   padding: 0.8em 0;
 }
@@ -158,7 +219,7 @@
   font-size: 1.5em;
   padding: 0.5em;
   align-items: center;
-  background-color: #6c566c;
+  background-color: #608cd5d4;
 }
 
 .group-names {
@@ -167,7 +228,7 @@
 
 .new-grp-link {
   border: 1px solid #6c566c;
-  background-color: #a2a267;
+  background-color: #5d8ee1d4;
   width: 20%;
   padding: 10px;
   margin: 3em 1em;
@@ -178,7 +239,7 @@
 .form-control {
   padding: 2em;
   border: 1px solid #6c566c;
-  background-color: #a2a267;
+  background-color: #5d8ee1d4;
   margin-bottom: 1.4em;
   width: 100%;
 }
@@ -186,7 +247,7 @@
 .backward {
   border: #6c566c solid 2px;
   padding: 10px;
-  background-color: #a2a267;
+  background-color: #5d8ee1d4;
   text-decoration: none;
 }
 
@@ -194,8 +255,8 @@
 #group-show-title {
   text-align: center;
   font-size: 2em;
-  background-color: #303;
-  color: gold;
+  background-color: #3778c2;
+  color: #fff;
   margin: 0;
   padding: 0.8em 0;
   margin-bottom: 3em;
@@ -214,15 +275,11 @@
 .show-links a {
   text-decoration: none;
   border: 1px solid #6c566c;
-  background-color: #a2a267;
+  background-color: #5d8ee1d4;
   width: 25%;
   padding: 10px;
   align-self: center;
   text-align: center;
-}
-
-#add-show {
-  width: 40%;
 }
 
 .total-expense {
@@ -281,7 +338,7 @@
 
 .delete-show {
   border: 1px solid #6c566c;
-  background-color: #a2a267;
+  background-color: #51b523;
   padding: 10px;
   text-align: center;
   margin: 2em 0;
@@ -330,7 +387,7 @@
 
 .form-btn {
   border: 1px solid #6c566c;
-  background-color: #a2a267;
+  background-color: #51b523;
   width: 20%;
   padding: 10px;
   margin: 3em 1em;
@@ -340,7 +397,7 @@
 
 .back-btn {
   border: 1px solid #6c566c;
-  background-color: #a2a267;
+  background-color: #51b523;
   width: 10%;
   padding: 10px;
   margin: 3em 1em;
@@ -361,17 +418,13 @@
     width: 100%;
   }
 
-  body {
-    background-color: orange;
-  }
-
   #group-index-title {
     width: 100%;
     font-size: 1.4em;
   }
 
   .new-grp-heading h1 {
-    color: gold;
+    color: #fff;
     align-self: center;
     text-align: center;
     padding: 0.2em;
@@ -405,8 +458,8 @@
 
   .new-grp-link {
     border: 1px solid #6c566c;
-    background-color: #a2a267;
-    width: 20%;
+    background-color: #608cd5d4;
+    width: 100%;
     padding: 10px;
     margin: 3em 1em;
     align-self: center;
@@ -447,7 +500,6 @@
   .form-control {
     padding: 1em;
     border: 1px solid #6c566c;
-    background-color: #a2a267;
     margin-bottom: 1em;
     width: 100%;
   }
@@ -457,8 +509,8 @@
   #group-show-title {
     text-align: center;
     font-size: 1.28em;
-    background-color: #303;
-    color: gold;
+    background-color: #3778c2;
+    color: #fff;
     margin: 0;
     padding: 0.8em 0;
     margin-bottom: 3em;
@@ -496,12 +548,13 @@
   }
 
   .grp-expenses {
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     margin-top: 2em;
     align-items: center;
-    gap: 11em;
-    width: 70%;
+    width: 96%;
+    background-color: #5d8ee1d4;
+    padding: 1em 0.4em;
   }
 
   .group-cont-show {
@@ -511,7 +564,7 @@
     justify-items: center;
     position: relative;
     left: 0;
-    background-color: lightcoral;
+    background-color: #e8ebf1;
   }
 
   .grp-show-link {
@@ -521,22 +574,19 @@
 
   .show-amount {
     text-align: end;
+    margin-right: 0.5em;
   }
 
   .show-name {
     text-align: start;
-    font-size: 0.8em;
-    position: absolute;
-    left: 0;
+    font-size: 0.6em;
     margin-right: 1em;
-    margin-left: 0.5em;
   }
 
   .show-links {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    gap: 1em;
+    flex-direction: column;
+    gap: 1.6em;
     width: 100%;
     margin-top: 4em;
   }
@@ -548,11 +598,10 @@
 
   .delete-show {
     border: 1px solid #6c566c;
-    background-color: #a2a267;
     padding: 10px;
     text-align: center;
     margin: 2em 0;
-    width: 100%;
+    width: 94%;
   }
 
   .show-link-back {
@@ -563,11 +612,9 @@
   .show-links a {
     text-decoration: none;
     border: 1px solid #6c566c;
-    background-color: #a2a267;
-    width: 25%;
+    width: 90%;
     padding: 6px;
-    align-self: center;
-    text-align: center;
+    background-color: #51b523;
   }
 
   #new-expense-title {
@@ -577,7 +624,6 @@
 
   .new-expense {
     width: 100%;
-    background-color: brown;
   }
 
   .new-expense .form-control {
@@ -601,5 +647,85 @@
     position: relative;
     left: 0;
     right: 0;
+  }
+
+  /* -------------- splash index  ------------- */
+  .splash-user {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.4em;
+    flex-direction: column;
+  }
+
+  .splash-para {
+    font-size: 1.2em;
+    color: #000;
+    text-align: center;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .sign-in {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    padding: 0.2em;
+    gap: 0.2em;
+  }
+
+  .nav-link1 {
+    margin-top: 1em;
+    text-decoration: none;
+    font-size: 0.6em;
+    padding: 0.2em;
+    font-weight: bold;
+    border: 1px solid #000;
+  }
+
+  .nav-link2 {
+    margin-top: 1em;
+    text-decoration: none;
+    padding: 0.2em;
+    font-size: 0.6em;
+    font-weight: bold;
+    border: 1px solid #000;
+  }
+
+  .splash-title {
+    text-align: center;
+    font-size: 0.9em;
+    color: #fff;
+    margin-left: 0;
+    padding: 0.8em 0;
+    width: 86%;
+    position: relative;
+    left: 0;
+  }
+
+  /* -------------- Loging  ------------- */
+
+  .actions {
+    width: 3em;
+    margin-top: 1em;
+  }
+
+  .actions input {
+    background-color: #51b523;
+    padding: 1em;
+    border: 1px solid #e8ebf1;
+  }
+
+  .fields {
+    background-color: #e8ebf1;
+    width: 50%;
+    display: flex;
+  }
+
+  .fields [type="checkbox"] {
+    padding: 1em;
   }
 }

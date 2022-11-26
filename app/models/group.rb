@@ -1,5 +1,5 @@
 class Group < ApplicationRecord
-  belongs_to :user, foreign_key: 'user_id'
+  belongs_to :user, foreign_key: 'user_id', dependent: :destroy
   has_many :expenses, dependent: :destroy
   validates :name, presence: true, length: { in: 4..250 }
   validates :icon, presence: true, length: { in: 4..250 }
