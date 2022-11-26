@@ -21,6 +21,18 @@
   margin: 0;
   padding: 0;
 }
+a{
+    text-decoration: none;
+}
+
+:root {
+    --text: black;
+    --blue: #3778c2;
+    --green: #51b523;
+    --grey: grey;
+    --red: #f21905;
+    --white: aliceblue;
+  }
 
 .group-cont {
     display: grid;
@@ -37,12 +49,12 @@ justify-content: center;
 .new-grp-heading {
     font-size: 2rem;
     align-self: center;
-    background-color: #330033;
+    background-color:var(--blue);
     width: 100%;
 }
 
 .new-grp-heading h1 {
-    color : gold;
+    color :var(--text);
     align-self: center;
 text-align: center;
 }
@@ -100,7 +112,7 @@ margin-left: 2em;
     font-size: 2rem;
     text-align: center;
     font-size: 3.1em;
-    color: gold;
+    color:var(--text);
     margin: 0;
     padding: 0.8em 0;
 }
@@ -111,12 +123,12 @@ margin-left: 2em;
     padding: 10px;
     border: 2px solid black;
     text-align: center;
-    background-color: #a2a267;
+    background-color:var(--green);
     margin-left: 30%;
 }
 
 .splash-container {
-    background-color: #330033;
+    background-color: var(--blue);
 }
 
 .splash-btn {
@@ -130,10 +142,10 @@ margin-left: 2em;
 #group-index-title {
     text-align: center;
     font-size: 2em;
-    background-color: #330033;
-    color: gold;
+    background-color: var(--blue);
+    color: var(--text);
     margin: 0;
-    padding: 0.em 0;
+    padding: 0 0;
 }
    
 #group-index-title h1{
@@ -150,12 +162,12 @@ margin-top: 9.2em;
 .group-info {
     display: flex;
     width: 100%;
-    color: purple;
+    color: var(--text);
     gap: 4em;
     font-size: 1.5em;
     padding: 0.5em;
     align-items: center;
-    background-color: #6c566c;
+    background-color: #285b85;
 }
 
 .group-names {
@@ -163,8 +175,8 @@ margin-top: 9.2em;
 }
 
 .new-grp-link {
-    border: 1px solid #6c566c;
-    background-color: #a2a267;
+    border: 1px solid #285b85;
+    background-color: var(--green);
     width: 20%;
     padding: 10px;
     margin: 3em 1em;
@@ -174,17 +186,17 @@ margin-top: 9.2em;
 
 .form-control {
     padding: 2em;
-    border: 1px solid #6c566c;
-    background-color: #a2a267;
+    border: 1px solid #285b85;
+    background-color: var(--text);
     margin-bottom: 1.4em;
     width: 100%;
     
 }
 
 .backward {
-   border: #6c566c solid 2px;
+   border: #285b85 solid 2px;
    padding: 10px;
-    background-color: #a2a267;
+    background-color: var(--text);
     text-decoration: none;
 }
 
@@ -193,8 +205,8 @@ margin-top: 9.2em;
 #group-show-title {
     text-align: center;
     font-size: 2em;
-    background-color: #330033;
-    color: gold;
+    background-color: var(--blue);
+    color: var(--text);
     margin: 0;
     padding: 0.em 0;
     margin-bottom: 3em;
@@ -212,8 +224,8 @@ margin-top: 9.2em;
 
 .show-links a {
     text-decoration: none;
-    border: 1px solid #6c566c;
-    background-color: #a2a267;
+    border: 1px solid #285b85;
+    background-color: var(--green);
     width: 25%;
     padding: 10px;
     align-self: center;
@@ -229,7 +241,7 @@ width: 40%;
     gap: 4em;
     font-size: 1.5em;
     align-items: center;
-    background-color: #6c566c;
+    background-color: var(--blue);
     margin: 0 1.7em;
     padding: 0.2em 0.7em;
 }
@@ -237,11 +249,11 @@ width: 40%;
 .group-info-show{
     display: flex;
     width: 100%;
-    color: purple;
+    color: var(--text);
     gap: 2em;
     font-size: 1.5em;
     align-items: center;
-    background-color: #6c566c;
+    background-color: #266dab;
 }
 
 .grp-expenses {
@@ -283,8 +295,8 @@ flex-direction: column;
 }
 
 .delete-show {
-    border: 1px solid #6c566c;
-    background-color: #a2a267;
+    border: 1px solid var(--green);
+    background-color: var(--green);
     padding: 10px;
     text-align: center;
     margin: 2em 0;
@@ -308,8 +320,8 @@ flex-direction: column;
 
  #update-links a {
     text-decoration: none;
-    border: 1px solid #6c566c;
-    background-color: #a2a267;
+    border: 1px solid var(--green);
+    background-color:var(--green);
     width: 25%;
     padding: 10px;
     align-self: center;
@@ -328,13 +340,13 @@ flex-direction: column;
     margin-top: 4em;
     width: 100%;
     height: 10%;
-    background-color: #a2a267;
+    background-color: var(--green);
     padding: 2em;
 }
 
 .form-btn {
-    border: 1px solid #6c566c;
-    background-color: #a2a267;
+    border: 1px solid #285b85;
+    background-color: var(--green);
     width: 20%;
     padding: 10px;
     margin: 3em 1em;
@@ -343,8 +355,8 @@ flex-direction: column;
 }
 
 .back-btn {
-    border: 1px solid #6c566c;
-    background-color: #a2a267;
+    border: 1px solid #285b85;
+    background-color: green;
     width: 10%;
     padding: 10px;
     margin: 3em 1em;
@@ -365,7 +377,7 @@ flex-direction: column;
         width: 100%;
     }
     body {
-        background-color: orange;
+        background-color: rgb(237, 242, 245);
     }
 
     #group-index-title {
@@ -394,8 +406,8 @@ flex-direction: column;
     }
 
     .new-grp-link {
-        border: 1px solid #6c566c;
-        background-color: #a2a267;
+        border: 1px solid var(--green);
+        background-color: var(--green);
         width: 20%;
         padding: 10px;
         margin: 3em 1em;
@@ -420,12 +432,12 @@ flex-direction: column;
         .new-grp-heading {
             font-size: 2em;
             align-self: center;
-            background-color: #330033;
+            background-color: var(--blue);
             width: 100%;
         }
         
         .new-grp-heading h1 {
-            color : gold;
+            color : var(--text);
             align-self: center;
             text-align: center;
             padding: 0.2em;
@@ -444,8 +456,8 @@ flex-direction: column;
 
         .form-control {
             padding: 1em;
-            border: 1px solid #6c566c;
-            background-color: #a2a267;
+            border: 1px solid var(--green);
+            background-color: var(--green);
             margin-bottom: 1em;
             width: 100%;
         }
@@ -455,8 +467,8 @@ flex-direction: column;
         #group-show-title {
             text-align: center;
              font-size: 1.28em;
-            background-color: #330033;
-            color: gold;
+            background-color:var(--blue);
+            color: var(--text);
             margin: 0;
             padding: 0.em 0;
             margin-bottom: 3em;
@@ -469,7 +481,7 @@ flex-direction: column;
             gap: 3.2em; 
             font-size: 1em;
             align-items: center; 
-            background-color: #6c566c;
+            background-color: var(--blue);
             margin: 0 1em;
            padding: 0.2em 0.4em; 
 
@@ -478,11 +490,11 @@ flex-direction: column;
         .group-info-show{
             display: flex;
             width: 100%;
-            color: purple;
+            color: var(--text);
             gap: 1em;
             font-size: 1em;
             align-items: center;
-            background-color: #6c566c;
+            background-color: var(--blue);
         }
         
         .group-info-show img {
@@ -547,8 +559,8 @@ flex-direction: column;
         }
         
         .delete-show {
-            border: 1px solid #6c566c;
-            background-color: #a2a267;
+            border: 1px solid #285b85;
+            background-color: var(--text);
             padding: 10px;
             text-align: center;
             margin: 2em 0;
@@ -561,8 +573,8 @@ flex-direction: column;
             }         
             .show-links a {
                 text-decoration: none;
-                border: 1px solid #6c566c;
-                background-color: #a2a267;
+                border: 1px solid #285b85;
+                background-color: var(--text);
                 width: 25%;
                 padding: 6px;
                 align-self: center;

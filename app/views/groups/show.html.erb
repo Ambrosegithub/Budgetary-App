@@ -22,7 +22,7 @@
   <div class="show-links">
      
      <%= link_to "Edit this group", edit_group_path(@group), class: "edit-show" %> 
-     <%= link_to "Add New Expenses", new_expense_path, id: "add-show" %>
+     <%= link_to "Add New Expenses", new_group_expense_path(@group, @expense), id: "add-show" %>
             
      <%= link_to "Back to groups", groups_path, class: "back-show" %>
     

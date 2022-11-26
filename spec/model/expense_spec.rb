@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'rails_helper'
 
 RSpec.describe Expense, type: :model do
@@ -11,16 +13,14 @@ RSpec.describe Expense, type: :model do
             @group = Group.create(
               user_id: 1,
               name: 'Rice',
-                icon: 'https://www.flaticon.com/svg/static/icons/svg/3135/3135715.png'
+              icon: 'https://www.flaticon.com/svg/static/icons/svg/3135/3135715.png'
             ),
             @expense = Expense.create(
-                user_id: 1,
-                name: 'Rice',
-                amount: 100,
-                group_id: 1
-
+              user_id: 1,
+              name: 'Rice',
+              amount: 100,
+              group_id: 1
             )
-           
   end
 
   it '@recipefood created should be valid' do
