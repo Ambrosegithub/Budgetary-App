@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class Expense < ApplicationRecord
   belongs_to :user, foreign_key: 'user_id', dependent: :destroy
   has_and_belongs_to_many :groups

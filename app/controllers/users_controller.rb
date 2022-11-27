@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class UsersController < ApplicationController
   before_action :set_user, only: %i[index show edit update destroy]
 
@@ -24,7 +26,7 @@ class UsersController < ApplicationController
     @user = User.new(user_params)
 
     respond_to do |format|
-      if @users.save
+      if @user.save
         format.html { redirect_to user_url(@user), notice: 'User was successfully created.' }
         format.json { render :show, status: :created, location: @user }
       else
@@ -62,7 +64,7 @@ class UsersController < ApplicationController
 
   # Use callbacks to share common setup or constraints between actions.
   def set_user
-    @user = User.find_by(id: params[:user_id])
+    @user = User.find(params[:id])
   end
 
   # Only allow a list of trusted parameters through.

@@ -1,13 +1,13 @@
+<%= link_to group do %>
 <div class="group-info">
    <p>
-    <img src='<%= group.icon %>' alt='<%= group.icon %>' width='100px' />
+    <%= group.icon %>
   </p>
 
    <p class="group-names">
     <%= group.name %>
    </p>
 
-  
-      <%= link_to "Show this group", group %>
-  
+   <p> $<%= group.total_expenses %></p>
 </div>
+<%end%>
