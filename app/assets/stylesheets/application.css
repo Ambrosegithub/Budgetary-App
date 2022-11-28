@@ -14,6 +14,11 @@
  *= require_self
  */
 
+body {
+  margin: 0;
+  padding: 0;
+}
+
 *,
 *::before,
 *::after {
@@ -105,8 +110,9 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 2.4em;
+  font-size: 2em;
   flex-direction: column;
+  margin-top: 10%;
 }
 
 .sign-up-page {
@@ -124,14 +130,10 @@ a {
 
 .input-field {
   width: 100%;
-  padding: 1em;
-}
-
-.sign-up-btn {
-  text-align: center;
-  padding: 0.7em;
-  align-self: center;
-  margin-top: 0.3em;
+  margin: 0.5em 0;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  padding: 10px;
 }
 
 .splash-title {
@@ -144,8 +146,8 @@ a {
 
 .splash-link {
   text-decoration: none;
-  font-size: 1em;
-  padding: 10px;
+  font-size: 0.5em;
+  padding: 6px;
   text-align: center;
   color: var(--white);
   background-color: var(--blue);
@@ -154,11 +156,15 @@ a {
 .nav-link1a {
   padding: 0.5em;
   background-color: var(--blue);
+  color: #fff;
+  text-decoration: none;
 }
 
 .nav-link2b {
   padding: 0.5em;
   background-color: var(--blue);
+  color: #fff;
+  text-decoration: none;
 }
 
 .splash-container {
@@ -167,12 +173,6 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.splash-btn {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
 }
 
 /* -------------- Group index  ------------- */
@@ -248,11 +248,17 @@ a {
 .new-grp-link {
   border: 1px solid #285b85;
   background-color: var(--green);
-  width: 100%;
+  width: 80%;
   padding: 10px;
-  margin: 3em 1em;
-  align-self: center;
+  margin: 25% auto 0 auto;
   text-align: center;
+}
+
+.new-btn {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  color: var(--white);
 }
 
 .save-grp-btn {
@@ -262,13 +268,6 @@ a {
   margin-left: 2em;
   margin-top: 10px;
   color: var(--white);
-}
-
-.form-control {
-  padding: 0.75em;
-  border: 1px solid #285b85;
-  margin-bottom: 1.4em;
-  width: 100%;
 }
 
 /* -------------- Group show  ------------- */
@@ -473,8 +472,6 @@ a {
     box-sizing: inherit;
     margin: 0;
     padding: 0;
-
-    /* width: 100%; */
   }
 
   body {
@@ -531,19 +528,17 @@ a {
   }
 
   .new-grp-link {
-    border: 1px solid var(--green);
+    border: 1px solid #285b85;
     background-color: var(--green);
-    width: 100%;
+    width: 80%;
     padding: 10px;
-    margin: 3em 1em;
-    align-self: center;
+    margin: 25% auto 0 auto;
     text-align: center;
     text-decoration: none;
   }
 
   .new-grp-link a {
     text-decoration: none;
-    width: 100%;
   }
 
   /* -------------- New Group  ------------- */
@@ -573,13 +568,6 @@ a {
   .new-grp-form {
     width: 96%;
     margin-left: -1.2em;
-  }
-
-  .form-control {
-    padding: 0.6em;
-    border: 1px solid var(--green);
-    margin-bottom: 1em;
-    width: 100%;
   }
 
   /* -------------- Group show  ------------- */
