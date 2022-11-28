@@ -15,6 +15,7 @@ Budget- App is a Ruby on Rails mobile web application that allows users to keep 
 - [Category list , Transaction list]
 - [Functionality to Generate a Expenses for our categories with total cost]
 
+
 ## Video Demo
 [Video Link](https://www.loom.com/share/713ff3bc31f4405ab59df336b9e75c7c)
 
@@ -82,7 +83,7 @@ If you installed git you can clone the code to your machine, or download a ZIP o
   - run rspec spec
 
   
-## Authors
+## Author(s)
 👤 **Isigba Ambrose**
 
 - GitHub: [@Ambrosegithub](https://github.com/Ambrosegithub)
@@ -123,4 +124,3 @@ All the template colors, font, and layout distribution for the whole project wer
 ## 📝 License
 This project is MIT licensed.
 
-NOTE: we recommend using the MIT license - you can set it up quickly by using templates available on GitHub. You can also use any other license if you wish.

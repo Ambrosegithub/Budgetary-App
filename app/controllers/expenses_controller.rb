@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 # class ExpensesController < ApplicationController
 #   before_action :authenticate_user!
 #   before_action :set_expense, only: %i[ show edit update destroy ]
@@ -80,7 +78,7 @@
 class ExpensesController < ApplicationController
   before_action :authenticate_user!
   before_action :set_expense, only: %i[show edit update destroy]
-  before_action :set_group
+  # before_action :set_group
 
   # GET /expenses or /expenses.json
   def index
@@ -88,29 +86,27 @@ class ExpensesController < ApplicationController
   end
 
   # GET /expenses/1 or /expenses/1.json
-  def show
-  end
+  def show; end
 
   # GET /expenses/new
   def new
+    @group = Group.find(params[:group_id])
     @expense = @group.expenses.build
   end
 
   # GET /expenses/1/edit
   def edit
     @group = Group.find_by(id: params[:group_id])
-    
   end
 
   # POST /expenses or /expenses.json
   def create
-
     @group = current_user.groups.find_by(id: params[:group_id])
     @expense = current_user.expenses.build(expense_params)
 
     respond_to do |format|
       if @expense.save
-        format.html { redirect_to group_path(@expense.group_id), notice: "Expense was successfully created." }
+        format.html { redirect_to group_path(@expense.group_id), notice: 'Expense was successfully created.' }
         format.json { render :show, status: :created, location: @expense }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -140,16 +136,17 @@ class ExpensesController < ApplicationController
     @expense.destroy
 
     respond_to do |format|
-      format.html { redirect_to expenses_url, notice: "Expense was successfully destroyed." }
+      format.html { redirect_to expenses_url, notice: 'Expense was successfully destroyed.' }
       format.json { head :no_content }
     end
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_expense
-      @expense = Expense.find(params[:id])
-    end
+
+  # Use callbacks to share common setup or constraints between actions.
+  def set_expense
+    @expense = Expense.find(params[:id])
+  end
 
   # Only allow a list of trusted parameters through.
   def expense_params
