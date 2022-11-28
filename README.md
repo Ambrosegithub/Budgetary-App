@@ -20,7 +20,7 @@ Budget- App is a Ruby on Rails mobile web application that allows users to keep 
 [Video Link](https://www.loom.com/share/713ff3bc31f4405ab59df336b9e75c7c)
 
 # Live Presentation link
-[Live Link](https://gentle-spire-11113.herokuapp.com/)
+[Live Link](https://hidden-island-72337.herokuapp.com/)
 
 ## Getting Started
 -To get a local copy up and running follow these simple example steps.
