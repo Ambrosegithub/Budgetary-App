@@ -1,6 +1,14 @@
 <div class="new-grp">
 <div class ="new-grp-heading ">
-<h1 class="">New group</h1>
+<div class="new-link-back">
+  <%= link_to "Back", groups_path, class: "backward" %>
+</div>
+<div>
+<h1 class="">Add New Group</h1>
+</div>
+<div>
+<span></span>
+</div>
 </div>
 <div class="new-grp-form">
 <%= render "form", group: @group %>

@@ -1,30 +1,56 @@
 <div id ="group-show-title">
-   <h1>Your Transaction</h1>
+    <div class="menu-bar">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </div>
+    <div>
+       <h1>Transactions</h1>
+    </div>
+   <div>
+      <span ></span>
+      <span ></span>
+      <span ></span>
+   </div>
 </div>
-
+<div class="recent">
+  <div>
+      <span ></span>
+   </div>
+  <div>   
+    <p>Most Recents</p>
+  </div>
+   <div>
+     <p>Most Ancients</p>
+  </div>
+</div>
 <div class="group-cont-show">
 
   <p style="color: green"><%= notice %></p>
 
   <div class="total-expense">
-    <%= render "/groups/groupshow" %>
+    <%= render "groupshow" %>
     <!-- sum amount-->
     <h1> $<%= @group.total_expenses %></h1> 
   </div>
 
   <% @group.expenses.each do |expense| %>
     <div class="grp-expenses">
+    <div>
         <h1 class="show-name"> <%= expense.name %></h1>
-        <h3 class="show-amount"><%= expense.amount %></h3>
+    </div>
+    <div>
+       <h3 class="show-amount"><%= expense.amount %></h3>
+    </div>
     </div>
   <% end %>
   
   <div class="show-links">
      
      <%= link_to "Edit this group", edit_group_path(@group), class: "edit-show" %> 
+      <%= link_to "Back to groups", groups_path, class: "backward" %>
      <%= link_to "Add New Expenses", new_group_expense_path(@group, @expense), id: "add-show" %>
             
-     <%= link_to "Back to groups", groups_path, class: "back-show" %>
     
      
   </div>

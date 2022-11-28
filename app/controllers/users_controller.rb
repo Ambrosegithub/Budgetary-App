@@ -1,8 +1,4 @@
-# frozen_string_literal: true
-
 class UsersController < ApplicationController
-  # before_action :authenticate_user!
-  load_and_authorize_resource
   before_action :set_user, only: %i[index show edit update destroy]
 
   # GET /users or /users.json
@@ -12,8 +8,7 @@ class UsersController < ApplicationController
 
   # GET /users/1 or /users/1.json
   def show
-    @group = @user.groups.all
-    @expenses = @group.expenses
+    @user = User.find(params[:user_id])
   end
 
   # GET /users/new

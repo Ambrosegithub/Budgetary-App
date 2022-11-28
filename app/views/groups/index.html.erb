@@ -1,6 +1,14 @@
 <div id ="group-index-title">
-      <h1>Your Catergories</h1>
-   </div>
+  <div> 
+       <%= link_to 'Back',  root_path, class: "splash-link" %> <br/>
+  </div>
+  <div>
+      <h1>Categories</h1>
+  </div>
+  <div >
+      <span><span>
+  </div>
+</div>
 <div id="groups">
   <% @groups.each do |group| %>
     <%= render group %>    
@@ -8,6 +16,8 @@
 </div>
 
 <div class="new-grp-link">
-  <%= link_to "New group", new_group_path %>
+  <%= link_to "New group", new_group_path, class: "new-btn" %>
+
 </div>
+
 <p style="color: green"><%= notice %></p>

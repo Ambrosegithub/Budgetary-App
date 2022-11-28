@@ -1,28 +1,36 @@
 <div class="splash-container">
-   <h1 class="splash-title">BUDGETARY APP TRANSACTIONS</h1>
+   <div>
+       <h1 class="splash-title">BUDGETARY APP TRANSACTIONS</h1>
+   </div>
+ 
 </div>
+<div>
+<p class="splash-para">Welcome To Your Enviable Budget App</p>
+</div>
+
 <div>
    <% if user_signed_in?%>
 <!--accessing the name the current user-->
 
-<div>
+<div class="container-fluid">
 <div class="splash-user">    
       <h2> 👤	
   <%= current_user.name %></h2>
-  <div class="splash-btn">
-      <%= link_to 'view groups',  groups_path, class: "splash-link" %> <br/>
+  <div class="container-fluid w-50 d-flex justify-content-center mx-5 mt-mb-5 gap-3">
+     <div><%= link_to 'view groups',  groups_path, class: "splash-link" %></div>
    
-      <%= link_to "Sign out", destroy_user_session_path, method: :delete, class: "splash-link" %>
+      <div><%= link_to "Sign out", destroy_user_session_path, method: :delete, class: "splash-link" %></div>
    </div>
 </div>
 
 </div>
 
   <% else %>
-  <%= link_to "Sign in", new_user_session_path, method: :delete, class:"nav-link" %>
+  <div class ="container-fluid mt-5 justify-content-center sign-in">
+  <%= link_to "Sign in", new_user_session_path, method: :delete, class:"nav-link1a" %>
 
-  <%= link_to "Sign up", new_user_registration_path, method: :delete, class:"nav-link" %>
-
+  <%= link_to "Sign up", new_user_registration_path, method: :delete, class:"nav-link2b" %>
+</div>
   <% end %>
 </div>
 
